@@ -1,0 +1,78 @@
+/* :root {
+  --r-background-color: #1d1d1d;
+  --r-main-color: #FFFFFFE6;
+  --r-link-color: #526cfe;
+  --r-link-color-hover: #3957ff;
+  --r-selection-background-color: #FFFFFFE6;
+  --r-selection-color: #1d1d1d;
+  --r-overlay-element-bg-color: 255, 255, 255;
+}
+
+.reveal h1, .reveal h2, .reveal h3,
+.reveal h4, .reveal h5, .reveal h6 {
+  color: #FFFFFF;
+}
+
+.reveal .slides {
+  border: 1.5px #444 solid;
+}
+
+.reveal hr {
+  border: 10px solid #1d1d1d;
+}
+.reveal .middle hr {
+  background: radial-gradient(ellipse at center,rgba(120, 148, 234, 0.324) 0,hsla(0, 0%, 100%, 0) 75%);
+}
+
+.reveal-viewport.reveal-scroll .scroll-page-content {
+  border: 1.5px #444 solid;
+} */
+
+:root {
+  /* 背景改成深色备用（图片加载失败时 fallback） */
+  --r-background-color: #1d1d1d;
+  --r-main-color: #FFFFFFE6;
+  --r-link-color: #526cfe;
+  --r-link-color-hover: #3957ff;
+  --r-selection-background-color: #FFFFFFE6;
+  --r-selection-color: #1d1d1d;
+  --r-overlay-element-bg-color: 255, 255, 255;
+}
+
+/* 全局背景图 */
+.reveal {
+  background: url("images/background_law_and_human.jpg") center/cover no-repeat fixed;
+  color: var(--r-main-color);
+}
+
+/* 标题文字白色加阴影（保证在深色图上清晰） */
+.reveal h1, .reveal h2, .reveal h3,
+.reveal h4, .reveal h5, .reveal h6 {
+  color: #FFFFFF;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+/* 每张幻灯片内容区域半透明背景 */
+.reveal section {
+  background-color: rgba(29,29,29,0.75); /* 深色半透明容器 */
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* 分隔线样式 */
+.reveal hr {
+  border: 10px solid #1d1d1d;
+}
+.reveal .middle hr {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(120, 148, 234, 0.324) 0,
+    hsla(0, 0%, 100%, 0) 75%
+  );
+}
+
+/* 滚动视图边框 */
+.reveal-viewport.reveal-scroll .scroll-page-content {
+  border: 1.5px #444 solid;
+}
+
